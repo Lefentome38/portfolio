@@ -1,25 +1,53 @@
-.page{
-  height: 100%;
-  width: 100%;
-
+header {
+  background-color: black;
+  height: 60px;
   display: flex;
   justify-content: center;
-}
 
-.divBody{
-  margin: 5%;
+  h1 {
+    color: white;
+    margin: 0.2em;
+  }
 
-  width: 50%;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  .test {
-    border: solid blue 2px;
-
-    height: 400px;
-    width: 400px;
-    margin: 5%;
-
+  button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0.5em;
   }
 }
+
+.pageExperiencePhoto {
+  border: solid red 2px;
+  height: 800px;
+
+  display: flex;
+
+  .ExperiencePhoto {
+    border: solid orange 2px;
+    margin: 2%;
+    width: 100%;
+    
+    .switch {
+      border: solid green 2px;
+
+      height: 20%;
+    }
+    
+    .card {
+      border: solid yellow 2px;
+      height: 80%;
+    }
+  }
+
+  .photoContact {
+    border: solid black 2px;
+    width: 40%;
+  }
+}
+
+.transition {
+  background-color: blue;
+  height: 50px;
+}
+
