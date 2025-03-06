@@ -4,7 +4,13 @@ body {
 
   background-color: #f7f6f6;
 
-  // border: solid red 1px;
+  border: solid red 1px;
+
+  height: 2000px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {font-family: "Inter";}
