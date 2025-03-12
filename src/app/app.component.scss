@@ -50,7 +50,7 @@
   }
 }
 
-.fullscreenCentralInformationCompetence {
+.fullscreenPhotoProfilCompétence {
   height: 1500px;
   border: solid red 2px;
 
@@ -66,5 +66,30 @@
       color: white;
       font-size: 50px;
     }
+  }
+
+  .containerTextePhotoProfil {
+    border: solid green 2px;
+    height: 600px;
+  }
+
+  .containerCompetences {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid yellow 2px;
+
+    h2 {
+      margin: 2% 5% 2% 5%;
+    }
+  
+    .barre {
+      height: 5px;
+      width: 40%;
+    }
+
   }
 }
