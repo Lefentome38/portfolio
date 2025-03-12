@@ -25,6 +25,7 @@ export class LogoTechnoComponent {
   gitlab: 'assets/images/gitlab.png',
   github: 'assets/images/github.png',
   docker: 'assets/images/docker.png',
+  linkedin: 'assets/images/linkedin.png',
  }
 
  get logoSrc(): string {
