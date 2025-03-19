@@ -1,19 +1,19 @@
-<div class="container">
-  <div class="competenceFrontend">
-    @for (item of listComposantsFrontend; track $index) {
-    <app-logo-techno techno="{{item}}"/>
-    }
-  </div>
-  <div class="competenceBackend">
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-  </div>
-  <div class="competenceOutils">
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
+<div class="wrapper">
+  <div class="container">
+    <div class="competenceFrontend bulle">
+      @for (item of listComposantsFrontend; track $index) {
+        <img src="assets/images/{{item}}.png" alt="assets/images/{{item}}">
+      }
+    </div>
+    <div class="competenceBackend bulle">
+      @for (item of listComposantsBackend; track $index) {
+        <img src="assets/images/{{item}}.png" alt="assets/images/{{item}}">
+      }
+    </div>
+    <div class="competenceOutils bulle">
+      @for (item of listComposantsOutils; track $index) {
+        <img src="assets/images/{{item}}.png" alt="assets/images/{{item}}">
+      }
+    </div>
   </div>
 </div>
