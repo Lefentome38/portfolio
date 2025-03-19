@@ -6,6 +6,9 @@
   .containerCarteProjet {
     border: solid blue 2px;
     width: 95%;
+
+    display: flex;
+    justify-content:space-around;
   }
 
   .dropdownLogo {
