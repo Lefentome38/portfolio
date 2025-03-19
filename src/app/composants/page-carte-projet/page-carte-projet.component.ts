@@ -10,5 +10,5 @@ import { LogoTechnoComponent } from '../logo-techno/logo-techno.component';
 })
 export class PageCarteProjetComponent {
 
-  listeLogo = ["ts", "js", "html", "css3", "angular", "react", "java", "git", "nodejs", "sql", "figma", "gitlab", "github", "docker", "linkedin", "sass",]
+  listeLogo = ["ts", "js", "html", "css", "angular", "react", "java", "git", "nodejs", "sql", "figma", "gitlab", "github", "docker", "linkedin", "sass",]
 }
