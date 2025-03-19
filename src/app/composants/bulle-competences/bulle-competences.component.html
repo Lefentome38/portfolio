@@ -1,9 +1,8 @@
 <div class="container">
   <div class="competenceFrontend">
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
-    <app-logo-techno techno="linkedin"/>
+    @for (item of listComposantsFrontend; track $index) {
+    <app-logo-techno techno="{{item}}"/>
+    }
   </div>
   <div class="competenceBackend">
     <app-logo-techno techno="linkedin"/>
@@ -11,7 +10,7 @@
     <app-logo-techno techno="linkedin"/>
     <app-logo-techno techno="linkedin"/>
   </div>
-  <div class="competenceDevOps">
+  <div class="competenceOutils">
     <app-logo-techno techno="linkedin"/>
     <app-logo-techno techno="linkedin"/>
     <app-logo-techno techno="linkedin"/>
