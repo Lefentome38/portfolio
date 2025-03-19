@@ -1,5 +1,9 @@
 <div class="carteProjet">
-  <img src="" alt="">
-  <p></p>
-  <div class="containerLogo"></div>
+  <img class="imgProjet" src="" alt="">
+  <p>NameProjet</p>
+  <div class="containerLogo">
+    @for (item of listeLogoProjetTemporaire; track $index) {
+      <img class="logo" src="assets/images/{{item}}.png" alt="assets/images/{{item}}">
+    }
+  </div>
 </div>

@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class CarteProjetComponent {
 
+  listeLogoProjetTemporaire = ["ts", "js", "html", "css", "angular"]
 }
