@@ -1,19 +1,19 @@
 <div class="box">
 
   <div class="carteProjet">
-    <img class="imgProjet" src="assets/images/imgProjet/projetCalculatriceAngular.png" alt="">
-    <p>NameProjet</p>
+    <img class="imgProjet" src="{{data?.image}}" alt="{{data?.image}}">
+    <p>{{data?.titre}}</p>
     <div class="containerLogo">
-      @for (item of listeLogoProjetTemporaire; track $index) {
+      @for (item of data?.logos; track $index) {
         <img class="logo" src="assets/images/{{item}}.png" alt="assets/images/{{item}}">
       }
     </div>
   </div>
 
   <div class="containerButton">
-    <button>tata</button>
-    <button>tata</button>
-    <button>tata</button>
+    <a class="btn">{{data?.liens?.[1]?.label}}</a>
+    <a class="btn">tata</a>
+    <a class="btn">tata</a>
   </div>
   
 </div>
