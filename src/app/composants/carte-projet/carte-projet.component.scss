@@ -66,11 +66,21 @@
   flex-direction: column;
   align-items: center;
 
-  button {
+  a {
     border: solid #0FC9F2 4px;
     border-radius: 10px;
+    background-color: #D9D9D9;
+    
+    padding: 10px 15px;
     margin: 5%;
-    height: 10%;
     width: 60%;
+
+    display: inline-block;
+    place-items: center;
+    text-align: center;
+
+    text-decoration: none;
+    color: inherit;
+
   }
 }
