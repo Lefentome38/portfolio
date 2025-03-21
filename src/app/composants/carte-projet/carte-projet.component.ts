@@ -1,6 +1,4 @@
-import { Component, Input, OnInit} from '@angular/core';
-import { ProjetService } from '../../services/carteProjet.service';
-import { Projet } from '../../models/carteProjet';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-carte-projet',
@@ -8,17 +6,7 @@ import { Projet } from '../../models/carteProjet';
   templateUrl: './carte-projet.component.html',
   styleUrl: './carte-projet.component.scss'
 })
-export class CarteProjetComponent implements OnInit {
+export class CarteProjetComponent {
 
-  @Input() projet!: string;
-  data: Projet | null = null;
-
-  constructor(private projetService: ProjetService) {}
-
-  ngOnInit() {
-    this.data = this.projetService.getProjet(this.projet);
-    if (!this.data) {
-      console.error(`Projet "${this.projet}" introuvable.`);
-    }
-  }
+  listeLogoProjetTemporaire = ["ts", "js", "html", "css", "angular"]
 }
