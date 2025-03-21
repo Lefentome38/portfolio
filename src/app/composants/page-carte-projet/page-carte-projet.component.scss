@@ -1,7 +1,10 @@
 .container {
+  border: solid red 2px;
+
   display: flex;
 
   .containerCarteProjet {
+    border: solid blue 2px;
     width: 95%;
 
     display: flex;
@@ -9,6 +12,7 @@
   }
 
   .dropdownLogo {
+    border: solid yellow 2px;
     width: 5%;
   }
 }

@@ -5,23 +5,21 @@ import { Projet } from '../models/carteProjet';
   providedIn: 'root'
 })
 export class ProjetService {
-  private imgDefault = 'assets/images/imgProjet/fondBlanc.png'
-
   private projets: { [key: string]: Projet } = {
     calculatrice: {
       image: 'assets/images/imgProjet/projetCalculatriceAngular.png',
       titre: 'Calculatrice',
       logos: ["ts", "js", "html", "css", "angular"],
       liens: [
-        { url: 'https://github.com/user/calculatrice', label: 'Front-end' },
-        { url: 'https://github.com/user/calculatrice', label: 'Back-end' },
+        { url: 'https://github.com/user/calculatrice', label: 'GitHub' },
+        { url: 'https://demo.calculatrice.com', label: 'Démo' },
         { url: 'https://doc.calculatrice.com', label: 'Documentation' }
       ]
     },
     todoliste: {
-      image: '',
+      image: 'assets/images/todo.png',
       titre: 'To-Do Liste',
-      logos: ["ts", "js", "html", "css", "angular"],
+      logos: ['assets/icons/react.svg', 'assets/icons/firebase.svg'],
       liens: [
         { url: 'https://github.com/user/todolist', label: 'GitHub' },
         { url: 'https://demo.todolist.com', label: 'Démo' },
@@ -31,12 +29,6 @@ export class ProjetService {
   };
 
   getProjet(nom: string): Projet | null {
-    const projet = this.projets[nom] || null;
-
-    if(projet){
-      projet.image = projet.image || this.imgDefault
-    }
-    
-    return projet
+    return this.projets[nom] || null;
   }
 }
