@@ -1,19 +1,54 @@
-<app-full-screen-home-image/>
+<div class="fullscreenHighPortfolioName">
+  <h1>Aymeric <br> RAMBAUD</h1>
+  <h2>Portfolio</h2>
+  <div class="cercleBlue"></div>
+  <div class="twoButton">
+    <a href="assets/docs/CV_DEV.pdf" download="CV_DEV.pdf">Télécherger mon CV</a>
+    <a href="">A propos de moi</a>
+  </div>
+</div>
 
-<app-header/>
+<div class="fullscreenPhotoProfilCompétence">
 
-<div class="page">
+  <div class="headerBlackPortfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="containerRight">
+        <a href="">Accueil</a>
+        <a href="">Compétences</a>
+        <a href="">Projet</a>
+        <a href="">Contactez-moi</a>
+        <div onclick="alert('downloadCV')" class="buttonDownloadCV">
+          <p>CV</p>
+          <img src="assets/images/download.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <app-deviding-bar titre="Profil"/>
+  <div class="containerTextePhotoProfil">
+    <div class="containerTexte">
+      <h2 style="font-size: 30px;">Aymeric RAMBAUD</h2>
+      <p>message qui parle de toi en tant que dev (version pro)</p>
+      <div class="container">
+        <app-logo-techno techno="linkedin" />
+        <app-logo-techno techno="github" />
+        <app-logo-techno techno="gitlab" />
+      </div>
+    </div>
 
-  <app-page-profil/>
+    <div class="photoProfil"></div>
+  </div>
 
-  <app-deviding-bar titre="Compétences"/>
-  
-  <app-bulle-competences />
-  
-  <app-deviding-bar titre="Projets"/>
+  <div class="containerCompetences">
+    <app-deviding-bar titre="Compétences"/>
+    <app-bulle-competences />
+    <app-deviding-bar titre="Projets"/>
+  </div>
 
-  <app-page-carte-projet/>
-  
+  <div class="containerProjets">
+    <app-page-carte-projet/>
+  </div>
+
+
 </div>
