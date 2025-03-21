@@ -1,34 +1,35 @@
-.wrapper {
-  border: solid red 2px;
+.container {
+
+  border: solid blue 2px;
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
   
-  .container {
-    
-    border: solid blue 2px;
+  .competenceFrontend {
+    border: solid red 2px;
     
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin: 2%;
+  }
 
-    width: 100%;
+  .competenceBackend {
+    border: solid red 2px;
+    
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin: 2%;
+  }
 
-    .bulle {
-      border: solid #0CB1F2 2px;
-      border-radius: 20px;
-
-      background-color: #D9D9D9;
-      
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      margin-top: 4%;
-      
-      img {
-        height: 80px;
-        width: 80px;
-        padding: 20px;
-      }
-    }
+  .competenceOutils {
+    border: solid red 2px;
+    
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin: 2%;
   }
 }

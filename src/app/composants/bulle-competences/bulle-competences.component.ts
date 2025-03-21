@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { LogoTechnoComponent } from "../logo-techno/logo-techno.component";
 
 @Component({
   selector: 'app-bulle-competences',
-  imports: [],
+  imports: [LogoTechnoComponent],
   templateUrl: './bulle-competences.component.html',
   styleUrl: './bulle-competences.component.scss'
 })
@@ -10,8 +11,8 @@ import { Component } from '@angular/core';
 export class BulleCompetencesComponent {
 
   listComposantsFrontend = ["react", "ts", "js", "sass", "angular"]
-  listComposantsBackend = ["sql", "nodejs"]
-  listComposantsOutils = ["docker", "git", "github", "gitlab", "figma"]
+  listComposantsBackend = ["react", "ts", "js", "sass", "angular"]
+  listComposantsOutils = ["react", "ts", "js", "sass", "angular"]
 
 
 }
