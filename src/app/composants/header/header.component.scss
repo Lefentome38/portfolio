@@ -1,0 +1,70 @@
+.headerBlackPortfolio {
+  background-color: black;
+
+  border-bottom: solid #0FC9F2 2px;
+
+  padding: 1%;
+
+  h2 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+  }
+
+  .container {
+    // border: solid red 2px;
+    display: flex;
+    justify-content: space-between;
+
+    .containerRight {
+      // border: solid blue 2px;
+
+      display: flex;
+
+      color: white;
+      width: 40%;
+
+      a {
+        font-size: 20px;
+        margin: 0% 5% 0% 0%;
+
+        display: flex;
+        place-items: center;
+
+        text-decoration: none;
+        color: inherit;
+        border: none;
+        outline: none;
+      }
+
+      .buttonDownloadCV { //le bouton n'est pas aligné avec le texte
+        // border: solid yellow 2px;
+
+        padding: 10px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+
+        border-radius: 20px;
+
+        color: #FFFFFF;
+        font-size: 20px;
+
+        background-color: #0FC9F2;
+
+        p {
+          // border: solid red 2px;
+          margin-right: 10px;
+        }
+
+        img {
+          // border: solid red 2px;
+
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
