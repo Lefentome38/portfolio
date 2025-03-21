@@ -14,7 +14,7 @@ export class LogoTechnoComponent {
   ts: 'assets/images/ts.png',
   js: 'assets/images/js.png',
   html: 'assets/images/html.png',
-  css: 'assets/images/css.png', 
+  css: 'assets/images/css3.png', 
   angular: 'assets/images/angular.png',
   react: 'assets/images/react.png',
   java: 'assets/images/java.png',
