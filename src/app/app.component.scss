@@ -170,5 +170,23 @@
     }
   }
 
-  // .containerCompetences {}
+  .containerCompetences {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      margin: 2% 5% 2% 5%;
+    }
+  
+    .barre {
+      height: 5px;
+      width: 40%;
+
+      border-radius: 10px;
+    }
+
+  }
 }
