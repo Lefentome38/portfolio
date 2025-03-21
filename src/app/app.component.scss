@@ -1,53 +1,25 @@
-header {
-  background-color: black;
-  height: 60px;
+.page{
+  height: 100%;
+  width: 100%;
+
   display: flex;
   justify-content: center;
-
-  h1 {
-    color: white;
-    margin: 0.2em;
-  }
-
-  button {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin: 0.5em;
-  }
 }
 
-.pageExperiencePhoto {
-  border: solid red 2px;
-  height: 800px;
+.divBody{
+  margin: 5%;
 
-  display: flex;
+  width: 50%;
 
-  .ExperiencePhoto {
-    border: solid orange 2px;
-    margin: 2%;
-    width: 100%;
-    
-    .switch {
-      border: solid green 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-      height: 20%;
-    }
-    
-    .card {
-      border: solid yellow 2px;
-      height: 80%;
-    }
-  }
+  .test {
+    border: solid blue 2px;
 
-  .photoContact {
-    border: solid black 2px;
-    width: 40%;
+    height: 400px;
+    width: 400px;
+    margin: 5%;
+
   }
 }
-
-.transition {
-  background-color: blue;
-  height: 50px;
-}
-
