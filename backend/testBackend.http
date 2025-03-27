@@ -4,6 +4,6 @@ Content-Type: application/json
 
 {
   "name": "John Doe",
-  "email": "lefentome@gmail.com",
+  "mail": "lefentome@gmail.com",
   "message": "Ceci est un test depuis REST Client."
 }

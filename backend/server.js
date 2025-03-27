@@ -17,31 +17,33 @@ const transport = nodemailer.createTransport({
 });
 
 const sendMail = async ({name, mail, message}) => {
-  return await transport.sendMail({
-    from: process.env.MAIL_USER,
-    to: process.env.MAIL_USER,
-    subject: "messagePortfolio",
-    html: `
-      <p><strong>Nom:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${mail}</p>
-      <p><strong>Message:</strong> ${message}</p>
-    `
-  })
+  try {
+    await transport.sendMail({
+      from: process.env.MAIL_USER,
+      to: process.env.MAIL_USER,
+      subject: "messagePortfolio",
+      html: `
+        <p><strong>Nom:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${mail}</p>
+        <p><strong>Message:</strong> ${message}</p>
+      `
+    });
+    console.log("Email envoyé");
+  } catch (error) {
+    console.error("Erreur lors de l'envoi de l'email", error);
+    throw error;
+  }
 }
 
-console.log("MAIL_USER " + process.env.MAIL_USER);
+app.post('/send-mail', async (req, res) => {
+  const {name, mail, message} = req.body;
 
-app.post('/send-mail', (req, res) => {
-  const {name, email, message} = req.body;
-
-  
-
-  // transport.sendMail((error, info) => {
-  //   if (error) {
-  //     return res.status(500).send(error.toString());
-  //   }
-      res.status(200).send('mail envoyé' + sendMail(name, email, message))
-  // })
+  try {
+    await sendMail({name, mail: mail, message})
+    res.status(200).send("mail envoyé avec succès")
+  } catch (error) {
+    res.status(500).send('Erreur lors de l\'envoi du mail');
+  }
 })
 
 app.listen(3000, () => console.log('Serveur backend lancé sur http://localhost:3000'));
