@@ -1,9 +1,0 @@
-### 
-POST http://localhost:3000/send-mail
-Content-Type: application/json
-
-{
-  "name": "John Doe",
-  "mail": "lefentome@gmail.com",
-  "message": "Ceci est un test depuis REST Client."
-}
